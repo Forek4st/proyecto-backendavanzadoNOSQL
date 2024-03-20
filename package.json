@@ -1,0 +1,29 @@
+{
+  "name": "proyecto-backendavanzado",
+  "version": "1.0.0",
+  "description": "Proyecto modulo Back End Avanzado Dev.F Jesus Janeiro",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Forek4st",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "jwt-simple": "^0.5.6",
+    "mongoose": "^8.2.2",
+    "nodemon": "^3.1.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/standard/eslintrc.json"
+    ]
+  },
+  "devDependencies": {
+    "standard": "^17.1.0"
+  }
+}
