@@ -37,12 +37,12 @@ const createTicket = async (req, res) => {
     const savedTicket = await newTicket.save()
 
     res.status(201).json({
-      message: 'Ticket creado correctamente',
+      message: 'Ticket created successfully',
       ticket: savedTicket
     })
   } catch (error) {
-    console.error('Error al crear el ticket:', error)
-    res.status(500).json({ msg: 'Error interno del servidor' })
+    console.error('Error creating ticket:', error)
+    res.status(500).json({ msg: 'Internal server error' })
   }
 }
 
@@ -64,7 +64,7 @@ const getAllTickets = async (req, res) => {
     }
   } catch (err) {
     res.status(500).json({
-      message: 'Error finding tickets',
+      message: 'Internal server error',
       error: err.message
     })
   }
@@ -87,7 +87,7 @@ const getTicketByUserId = async (req, res) => {
     })
   } catch (err) {
     res.status(500).json({
-      message: 'Error finding tickets',
+      message: 'Internal server error',
       error: err.message
     })
   }
