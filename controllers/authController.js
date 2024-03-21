@@ -4,38 +4,51 @@ import jwt from 'jwt-simple'
 
 const register = async (req, res) => {
   try {
-    if (
-      !req.body.dni ||
-      !req.body.name ||
-      !req.body.lastName ||
-      !req.body.dateOfBirth ||
-      !req.body.phoneNumber ||
-      !req.body.email ||
-      !req.body.userName ||
-      !req.body.password ||
-      !req.body.role
-    ) {
-      return res.status(400).json({
-        msg: 'Failed to register, missing fields',
-        error: 'Missing fields'
-      })
+    const requiredFields = [
+      'dni',
+      'name',
+      'lastName',
+      'dateOfBirth',
+      'phoneNumber',
+      'email',
+      'userName',
+      'password',
+      'role'
+    ]
+    for (const field of requiredFields) {
+      if (!req.body[field]) {
+        return res.status(400).json({
+          msg: 'Failed to register, missing fields',
+          error: `Missing field: ${field}`
+        })
+      }
     }
-
     const newPassword = await bcrypt.hash(req.body.password, 10)
-
     req.body.password = newPassword
 
+    // Crear el nuevo usuario
     const newUser = await User.create(req.body)
 
+    const payload = {
+      _id: newUser._id,
+      userName: newUser.userName,
+      role: newUser.role
+    }
+    const token = jwt.encode(payload, process.env.SECRET)
+
+    console.log(payload)
+
     newUser.password = undefined
-    return res.json({
+
+    res.status(201).json({
       msg: 'User created successfully',
+      token,
       user: newUser
     })
   } catch (error) {
     res.status(500).json({
       msg: 'Error creating user',
-      error
+      error: error.message
     })
   }
 }
@@ -48,7 +61,6 @@ const login = async (req, res) => {
   }
 
   try {
-    // Buscamos user con ese correo
     const user = await User.findOne({
       userName: req.body.userName
     })
@@ -66,6 +78,7 @@ const login = async (req, res) => {
 
     if (isPasswordCorrect) {
       const payload = {
+        _id: user._id,
         userName: user.userName,
         role: user.role
       }
