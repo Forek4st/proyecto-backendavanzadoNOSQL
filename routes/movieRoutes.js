@@ -12,7 +12,7 @@ import { authValidator } from '../middlewares/authValidator.js'
 const movieRoutes = express.Router()
 
 movieRoutes.post('/', createMovie)
-movieRoutes.get('/', authValidator, getAllMovies)
+movieRoutes.get('/', getAllMovies)
 movieRoutes.get('/date/:year', authValidator, getMoviebyReleaseDate)
 movieRoutes.get('/name/:name', authValidator, getMovieByName)
 movieRoutes.get('/rating/:rating', authValidator, getMovieByRating)
