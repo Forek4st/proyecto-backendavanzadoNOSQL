@@ -6,8 +6,9 @@ import ticketRoutes from './routes/ticketRoutes.js'
 import authRoutes from './routes/authRoutes.js'
 import path from 'path'
 
-const PORT = 3500
+const PORT = 8000
 const api = express()
+
 connect()
 
 api.use(express.json())
