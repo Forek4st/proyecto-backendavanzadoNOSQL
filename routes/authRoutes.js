@@ -5,5 +5,6 @@ const authRoutes = express.Router()
 
 authRoutes.post('/register', register)
 authRoutes.post('/login', login)
+authRoutes.patch('/reset-password')
 
 export default authRoutes

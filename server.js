@@ -4,6 +4,7 @@ import userRoutes from './routes/userRoutes.js'
 import movieRoutes from './routes/movieRoutes.js'
 import ticketRoutes from './routes/ticketRoutes.js'
 import authRoutes from './routes/authRoutes.js'
+import path from 'path'
 
 const PORT = 3500
 const api = express()
@@ -15,6 +16,26 @@ api.use('/users', userRoutes)
 api.use('/movies', movieRoutes)
 api.use('/tickets', ticketRoutes)
 api.use('/auth', authRoutes)
+
+api.get('/reset-password', (req, res) => {
+  res.sendFile(path.join(__dirname + 'Public/resetPassword.html'))
+})
+// Manejo de errores en formato invalido del JSON en Postman
+api.use((error, req, res, next) => {
+  if (error instanceof SyntaxError && 'body' in error) {
+    res.status(400).json({
+      message: 'Error: Invalid JSON format',
+      error: error.message
+    })
+  } else {
+    res.status(500).json(
+      {
+        message: 'Error: Internal server error',
+        error: error.message
+      }
+    )
+  }
+})
 
 api.listen(PORT, () => {
   console.log(`API running on ${PORT}`)

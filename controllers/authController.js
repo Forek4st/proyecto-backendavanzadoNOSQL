@@ -1,6 +1,7 @@
 import User from '../models/userModel.js'
 import bcrypt from 'bcrypt'
 import jwt from 'jwt-simple'
+// import nodemailer from 'nodemailer'
 
 const register = async (req, res) => {
   try {
@@ -26,7 +27,6 @@ const register = async (req, res) => {
     const newPassword = await bcrypt.hash(req.body.password, 10)
     req.body.password = newPassword
 
-    // Crear el nuevo usuario
     const newUser = await User.create(req.body)
 
     const payload = {
@@ -101,4 +101,52 @@ const login = async (req, res) => {
   }
 }
 
-export { register, login }
+/* const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: process.env.EMAIL_ADDRESS,
+    pass: process.env.EMAIL_PASSWORD
+  }
+}) */
+
+/* const resetPassword = async (req, res) => {
+  try {
+    const user = await User.findOne({ email: req.body.email })
+
+    if (!user) {
+      return res.status(404).json({
+        msg: 'No user found with this email'
+      })
+    }
+
+    const token = crypto.randomBytes(20).toString('hex')
+
+    user.resetPasswordToken = token
+    user.resetPasswordExpires = Date.now() + 3600000 // 1 hour
+
+    await user.save()
+
+    const mailOptions = {
+      to: user.email,
+      from: process.env.EMAIL_ADDRESS,
+      subject: 'Password Reset',
+      text: `Please click on the following link to reset your password: \n\n${process.env.CLIENT_URL}/reset-password/${token}\n\nIf you did not request this, please ignore this email.`
+    }
+
+    const htmlFilePath = path.join(process.cwd(), 'Public', 'resetPassword.html')
+
+    mailOptions.html = fs.readFileSync(htmlFilePath, 'utf-8')
+
+    await transporter.sendMail(mailOptions)
+
+    res.status(200).json({
+      msg: `An email has been sent to ${user.email} with further instructions.`
+    })
+  } catch (error) {
+    res.status(500).json({
+      msg: 'Error resetting password',
+      error: error.message
+    })
+  }
+} */
+export { register, login } // resetPassword }
