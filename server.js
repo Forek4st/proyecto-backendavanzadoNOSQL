@@ -5,7 +5,7 @@ import movieRoutes from './routes/movieRoutes.js'
 import ticketRoutes from './routes/ticketRoutes.js'
 import authRoutes from './routes/authRoutes.js'
 
-const PORT = 3500
+const PORT = 8000
 const api = express()
 
 connect()
