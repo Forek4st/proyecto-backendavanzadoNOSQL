@@ -37,7 +37,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/auth/register",
+					"raw": "https://proyecto-backendavanzadonosql.onrender.com//auth/register",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -67,7 +67,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/auth/login",
+					"raw": "https://proyecto-backendavanzadonosql.onrender.com//auth/login",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -96,7 +96,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/auth/login",
+					"raw": "https://proyecto-backendavanzadonosql.onrender.com//auth/login",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -125,7 +125,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/auth/login",
+					"raw": "https://proyecto-backendavanzadonosql.onrender.com//auth/login",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -165,7 +165,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8000/users/",
+					"raw": "https://proyecto-backendavanzadonosql.onrender.com//users/",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -192,7 +192,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8000/users/65fb593fb2a8984f909a9530",
+					"raw": "https://proyecto-backendavanzadonosql.onrender.com//users/65fb593fb2a8984f909a9530",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -218,7 +218,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8000/users/role/client",
+					"raw": "https://proyecto-backendavanzadonosql.onrender.com//users/role/client",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -248,7 +248,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/movies/",
+					"raw": "https://proyecto-backendavanzadonosql.onrender.com//movies/",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -274,7 +274,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8000/movies/",
+					"raw": "https://proyecto-backendavanzadonosql.onrender.com//movies/",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -300,7 +300,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8000/movies/name/Barbie",
+					"raw": "https://proyecto-backendavanzadonosql.onrender.com//movies/name/Barbie",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -327,7 +327,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8000/movies/date/2010",
+					"raw": "https://proyecto-backendavanzadonosql.onrender.com//movies/date/2010",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -354,7 +354,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8000/movies/rating/8.9",
+					"raw": "https://proyecto-backendavanzadonosql.onrender.com//movies/rating/8.9",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -381,7 +381,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8000/movies/genre/Action",
+					"raw": "https://proyecto-backendavanzadonosql.onrender.com//movies/genre/Action",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -418,7 +418,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/tickets",
+					"raw": "https://proyecto-backendavanzadonosql.onrender.com//tickets",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -444,7 +444,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8000/tickets/",
+					"raw": "https://proyecto-backendavanzadonosql.onrender.com//tickets/",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -471,7 +471,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8000/tickets/65fb5954b2a8984f909a9532",
+					"raw": "https://proyecto-backendavanzadonosql.onrender.com//tickets/65fb5954b2a8984f909a9532",
 					"protocol": "http",
 					"host": [
 						"localhost"
