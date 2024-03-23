@@ -4,9 +4,8 @@ import userRoutes from './routes/userRoutes.js'
 import movieRoutes from './routes/movieRoutes.js'
 import ticketRoutes from './routes/ticketRoutes.js'
 import authRoutes from './routes/authRoutes.js'
-import path from 'path'
 
-const PORT = 8000
+const PORT = 3500
 const api = express()
 
 connect()
@@ -18,9 +17,6 @@ api.use('/movies', movieRoutes)
 api.use('/tickets', ticketRoutes)
 api.use('/auth', authRoutes)
 
-api.get('/reset-password', (req, res) => {
-  res.sendFile(path.join(__dirname + 'Public/resetPassword.html'))
-})
 // Manejo de errores en formato invalido del JSON en Postman
 api.use((error, req, res, next) => {
   if (error instanceof SyntaxError && 'body' in error) {
