@@ -37,12 +37,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3500/auth/register",
+					"raw": "http://localhost:8000/auth/register",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3500",
+					"port": "8000",
 					"path": [
 						"auth",
 						"register"
@@ -67,12 +67,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3500/auth/login",
+					"raw": "http://localhost:8000/auth/login",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3500",
+					"port": "8000",
 					"path": [
 						"auth",
 						"login"
@@ -96,12 +96,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3500/auth/login",
+					"raw": "http://localhost:8000/auth/login",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3500",
+					"port": "8000",
 					"path": [
 						"auth",
 						"login"
@@ -125,12 +125,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3500/auth/login",
+					"raw": "http://localhost:8000/auth/login",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3500",
+					"port": "8000",
 					"path": [
 						"auth",
 						"login"
@@ -165,12 +165,12 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3500/users/",
+					"raw": "http://localhost:8000/users/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3500",
+					"port": "8000",
 					"path": [
 						"users",
 						""
@@ -192,12 +192,12 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3500/users/65fb593fb2a8984f909a9530",
+					"raw": "http://localhost:8000/users/65fb593fb2a8984f909a9530",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3500",
+					"port": "8000",
 					"path": [
 						"users",
 						"65fb593fb2a8984f909a9530"
@@ -218,12 +218,12 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3500/users/role/client",
+					"raw": "http://localhost:8000/users/role/client",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3500",
+					"port": "8000",
 					"path": [
 						"users",
 						"role",
@@ -248,12 +248,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3500/movies/",
+					"raw": "http://localhost:8000/movies/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3500",
+					"port": "8000",
 					"path": [
 						"movies",
 						""
@@ -274,12 +274,12 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3500/movies/",
+					"raw": "http://localhost:8000/movies/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3500",
+					"port": "8000",
 					"path": [
 						"movies",
 						""
@@ -300,12 +300,12 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3500/movies/name/Barbie",
+					"raw": "http://localhost:8000/movies/name/Barbie",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3500",
+					"port": "8000",
 					"path": [
 						"movies",
 						"name",
@@ -327,12 +327,12 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3500/movies/date/2010",
+					"raw": "http://localhost:8000/movies/date/2010",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3500",
+					"port": "8000",
 					"path": [
 						"movies",
 						"date",
@@ -354,12 +354,12 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3500/movies/rating/8.9",
+					"raw": "http://localhost:8000/movies/rating/8.9",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3500",
+					"port": "8000",
 					"path": [
 						"movies",
 						"rating",
@@ -381,12 +381,12 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3500/movies/genre/Action",
+					"raw": "http://localhost:8000/movies/genre/Action",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3500",
+					"port": "8000",
 					"path": [
 						"movies",
 						"genre",
@@ -418,12 +418,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3500/tickets",
+					"raw": "http://localhost:8000/tickets",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3500",
+					"port": "8000",
 					"path": [
 						"tickets"
 					]
@@ -444,12 +444,12 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3500/tickets/",
+					"raw": "http://localhost:8000/tickets/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3500",
+					"port": "8000",
 					"path": [
 						"tickets",
 						""
@@ -471,12 +471,12 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3500/tickets/65fb5954b2a8984f909a9532",
+					"raw": "http://localhost:8000/tickets/65fb5954b2a8984f909a9532",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3500",
+					"port": "8000",
 					"path": [
 						"tickets",
 						"65fb5954b2a8984f909a9532"
